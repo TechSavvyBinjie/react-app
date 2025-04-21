@@ -1,13 +1,113 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>张三 - 程序员</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: #f5f5f5;
+        color: #333;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+      header p {
+        color: #666;
+        font-size: 1.2rem;
+      }
+      .section {
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+      }
+      .section h2 {
+        color: #0078d7;
+        margin-bottom: 20px;
+      }
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+      .skill-card {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 6px;
+        text-align: center;
+      }
+      footer {
+        text-align: center;
+        padding: 30px;
+        color: #666;
+        margin-top: 60px;
+      }
+      .social-links {
+        margin-top: 20px;
+      }
+      .social-links a {
+        color: #0078d7;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="container">
+      <header>
+        <h1>张三</h1>
+        <p>全栈开发工程师 | 技术爱好者 | 问题解决者</p>
+      </header>
+
+      <section class="section">
+        <h2>关于我</h2>
+        <p>
+          我是一名拥有5年经验的全栈开发工程师，擅长使用现代Web技术构建高效、可扩展的应用程序。我热爱学习新技术，享受解决复杂问题的过程。
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>技能</h2>
+        <div class="skills-grid">
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">React</div>
+          <div class="skill-card">Node.js</div>
+          <div class="skill-card">Python</div>
+          <div class="skill-card">Docker</div>
+          <div class="skill-card">AWS</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>项目经验</h2>
+        <p>• 开发了高性能电商平台，支持日活用户超过10万</p>
+        <p>• 设计并实现了微服务架构，提高了系统可扩展性</p>
+        <p>• 优化了数据库查询，使系统响应时间减少了40%</p>
+      </section>
+
+      <footer>
+        <p>© 2023 张三. 保留所有权利。</p>
+        <div class="social-links">
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">博客</a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
